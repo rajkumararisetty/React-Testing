@@ -1,4 +1,5 @@
 import React, { PureComponent, Fragment } from 'react';
+import PropTyeps from 'prop-types';
 import './styles.scss';
 
 class Headline extends PureComponent {
@@ -18,6 +19,18 @@ class Headline extends PureComponent {
             </Fragment>
         );
     };
+}
+
+Headline.propTypes = {
+    header: PropTyeps.string,
+    desc: PropTyeps.string,
+    tempArray: PropTyeps.arrayOf(PropTyeps.shape({
+        firstName: PropTyeps.string,
+        lastName: PropTyeps.string,
+        email: PropTyeps.string,
+        age: PropTyeps.number,
+        onlineStatus: PropTyeps.bool,
+    }))
 }
 
 export default Headline;
