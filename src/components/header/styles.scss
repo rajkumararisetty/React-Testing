@@ -1,0 +1,19 @@
+header {
+    display: block;
+    background-color: #333;
+    height: 55px;
+
+    .wrap {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+    }
+
+    img {
+        width: 60px;
+    }
+}
